@@ -1,0 +1,159 @@
+Git Tutorial
+
+What is Git ?
+
+According to Wiki, here is the defination:-
+Git is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. 
+It is primarily used for software development, but it can be used to keep track of changes in any files. 
+As a distributed revision control system it is aimed at speed, data integrity, and support for distributed, non-linear workflows.
+
+You can read more about on Git on Wiki.
+
+Source: https://en.wikipedia.org/wiki/Git
+
+
+It was first developed for Linux but now you can use Git on Windows too.
+You can Download Git, just by a simple on Google.com
+Mostly Git download pages will detect the right Version of Git for you, Go ahead and Download.
+Once the setup file is downloaded you can start by double clicking on it.
+Now mostly we will keep the installation with default setting, unless we know what exactly changes we need to make.
+
+Once Done then we are good to go.
+Note: The commands will starts with '$' and following the next line will mostly be the Output of that command.
+
+#1 Configure our Username and Emails along with basics of Git.
+
+Let start with Version.
+
+$git --version
+ git version 2.12.2.windows.2
+
+Now lets learn about help.
+
+By default all the Git Commands are stored in 'C:\Program Files\Git\mingw64/libexec/git-core' directory.
+Like all other help Menu/Commands, in this also you can start by typing following:
+
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+Now lets say you want to more about 'clone' command, then you can type:
+
+$ git --help clone
+
+Now in this there will be no Output in Shell, but if you notice your default Web Browser is ready with answers you need.
+This command will open a Link or you can say Web Based manual where you can read and get more information on that.
+
+Now if you type following you will get a list of more commands and concept.
+
+$ git --help -a
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+available git commands in 'C:\Program Files\Git\mingw64/libexec/git-core'
+
+  add                 fsck-objects        rebase
+  add--interactive    gc                  rebase--helper
+  am                  get-tar-commit-id   receive-pack
+  annotate            grep                reflog
+  apply               gui                 remote
+  archimport          gui--askpass        remote-ext
+  archive             gui--askyesno       remote-fd
+  askpass             gui.tcl             remote-ftp
+  bisect              hash-object         remote-ftps
+  bisect--helper      help                remote-http
+  blame               http-backend        remote-https
+  branch              http-fetch          repack
+  bundle              http-push           replace
+  cat-file            imap-send           request-pull
+  check-attr          index-pack          rerere
+  check-ignore        init                reset
+  check-mailmap       init-db             rev-list
+  check-ref-format    instaweb            rev-parse
+  checkout            interpret-trailers  revert
+  checkout-index      lfs                 rm
+  cherry              log                 send-email
+  cherry-pick         ls-files            send-pack
+  citool              ls-remote           sh-i18n--envsubst
+  clean               ls-tree             shortlog
+  clone               mailinfo            show
+  column              mailsplit           show-branch
+  commit              merge               show-index
+  commit-tree         merge-base          show-ref
+  config              merge-file          stage
+  count-objects       merge-index         stash
+  credential          merge-octopus       status
+  credential-manager  merge-one-file      stripspace
+  credential-store    merge-ours          submodule
+  credential-wincred  merge-recursive     submodule--helper
+  cvsexportcommit     merge-resolve       subtree
+  cvsimport           merge-subtree       svn
+  cvsserver           merge-tree          symbolic-ref
+  daemon              mergetool           tag
+  describe            mktag               unpack-file
+  diff                mktree              unpack-objects
+  diff-files          mv                  update-index
+  diff-index          name-rev            update-ref
+  diff-tree           notes               update-server-info
+  difftool            p4                  upload-archive
+  difftool--helper    pack-objects        upload-pack
+  fast-export         pack-redundant      var
+  fast-import         pack-refs           verify-commit
+  fetch               patch-id            verify-pack
+  fetch-pack          prune               verify-tag
+  filter-branch       prune-packed        web--browse
+  fmt-merge-msg       pull                whatchanged
+  for-each-ref        push                worktree
+  format-patch        quiltimport         write-tree
+  fsck                read-tree
+
+git commands available from elsewhere on your $PATH
+
+  flow
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
