@@ -1,4 +1,4 @@
-title: Securitym0nk
+title: securitym0nk
 description: Cybersecurity | Pentesting | SOC | AppSec | DevSecOps
 url: "https://securitym0nk.github.io"
 baseurl: ""
@@ -13,7 +13,7 @@ highlighter: rouge
 paginate: 5
 
 author:
-  name: Securitym0nk
+  name: securitym0nk
 
 # Navigation
 header_pages:
