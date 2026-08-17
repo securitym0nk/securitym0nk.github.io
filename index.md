@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Securitym0nk
+title: securitym0nk
 ---
 
 Welcome to my cybersecurity blog.
@@ -15,3 +15,4 @@ I write about:
 - Threat Modeling
 - Cloud Security
 - Security Research
+- and more....
