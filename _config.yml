@@ -1,1 +1,25 @@
-theme: jekyll-theme-hacker
+title: Securitym0nk
+description: Cybersecurity | Pentesting | SOC | AppSec | DevSecOps
+url: "https://securitym0nk.github.io"
+baseurl: ""
+
+remote_theme: securitym0nk/Type-on-Strap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Blog settings
+paginate: 5
+
+author:
+  name: Securitym0nk
+
+# Navigation
+header_pages:
+  - about.md
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
